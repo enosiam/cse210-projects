@@ -5,7 +5,7 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("WELCOME TO THE GRADE PROGRAM.");
-        Console.Write("Enter your grade percentage: ");
+        Console.Write("Enter your grade percentage (do not include % sign): ");
         string input = Console.ReadLine();
         int grade = int.Parse(input);
 
