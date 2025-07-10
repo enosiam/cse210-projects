@@ -1,0 +1,10 @@
+using System;
+using System.Collections.Generic;
+
+public class Resume
+{
+    public string _name; // Person's name
+
+    // List to hold job objects. Initialized to an empty list.
+    public List<Job> _jobs = new List<Job>();
+}
