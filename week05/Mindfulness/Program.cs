@@ -41,5 +41,11 @@ class Program
         }
     }
 }
-
+/*
+To Exceed Requirements :
+- I added an activity log that saves completed activities with timestamps.
+- I ensured prompts/questions cycle through without repeating until all have been used once.
+- I animated breathing with growing/shrinking text instead of a simple countdown.
+- I added background color changes or sound effects for more immersion.
+*/
 
