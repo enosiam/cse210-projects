@@ -26,7 +26,7 @@ namespace ScriptureMemorizer
 
             // First try to hide words that aren't already hidden
             var visibleWords = _words.Where(w => !w.IsHidden()).ToList();
-            
+
             while (wordsHidden < numberToHide && visibleWords.Count > 0)
             {
                 int index = random.Next(visibleWords.Count);
@@ -54,3 +54,21 @@ namespace ScriptureMemorizer
         }
     }
 }
+// ===========================================================
+// Program.cs - Scripture Memorizer
+// ===========================================================
+// Core Requirements:
+//   - Display scripture with a reference.
+//   - Hide a few random words at a time until all are hidden.
+//   - Allow user to continue until scripture is fully hidden.
+//
+// Attempt to Exceed Core Requirements:
+//   - Used LINQ (`Where`, `All`, `Select`) for cleaner filtering and 
+//     checking of word states.
+//   - Implemented random hiding so it only hides words that are visible,
+//     avoiding unnecessary re-hiding.
+//   - Encapsulated word handling in a `Word` class for easier future 
+//     extension (e.g., styling hidden words differently).
+//   - Designed so scripture display automatically updates without 
+//     needing special case handling in `Program.cs`.
+// ===========================================================
